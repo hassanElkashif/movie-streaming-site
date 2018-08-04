@@ -1,0 +1,303 @@
+/*-----Global-----*/
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+:root {
+  --main-black:#1e202b;
+  --main-blue:#08aeea;
+  --main-green:#2af598;
+  --main-graident:linear-gradient(to right, #08aeea,#2af598);
+}
+html {
+  font-family: sans-serif;
+}
+body {
+  width: 100%;
+  background-color: white;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--main-black);
+}
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--main-black);
+}
+p , li {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--main-black);
+}
+.btnWhite {
+  display: inline-block;
+  text-decoration: none;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 60px;
+  margin-bottom: 90px;
+  background-image: linear-gradient(to right, #08aeea,#2af598);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.btnGroup {
+  position: relative;
+  z-index: 1;
+}
+.whiteBg {
+  display: block;
+  background-color: white;
+  height: 60px;
+  width: 200px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  border-radius: 3px;
+}
+.btncolor {
+  display: inline-block;
+  text-decoration: none;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-image: var(--main-graident);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 3px;
+}
+.btnGreen {
+  color: var(--main-green);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+span {
+  color:var(--main-green);
+}
+/*-----header --> nav-----*/
+header {
+  background-image: url(deadpoolheadersda.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 900px;
+  width: 90%;
+  padding: 0 5%;
+  position: relative;
+}
+.logo {
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+header h1 {
+  color:white;
+  width: 55%;
+  margin: 110px 0 40px 0 ;
+}
+header p {
+  color:white;
+  margin-bottom: 55px;
+  opacity: 0.9;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+}
+nav a {
+  color:white;
+  text-decoration: none;
+  line-height: 100px;
+}
+nav ul {
+  float: right;
+  margin-right: 35px;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 50px;
+}
+.ipad {
+  width: 60%;
+  position: absolute;
+  right: 0%;
+  bottom: 60px;
+}
+.mobile{
+  display: none;
+}
+label {
+  margin: 0 40px 0 0 ;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 32px;
+  right: 0%;
+}
+#toggle {
+  display: none;
+}
+.mobile ul {
+  text-align: center;
+  width: 100%;
+  display: none;
+  margin: 0;
+  background-color: rgba(255,255,255,0.1);
+}
+.mobile ul li {
+  margin: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+#toggle:checked ~ ul {
+  display: block;
+}
+/*-----NEW 4K MOVIES-----*/
+.new4k {
+  width: 90%;
+  padding: 0 5%;
+  margin-bottom: 160px;
+}
+.sectionTitle h2 , .sectionTitle a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 25px;
+}
+.sectionTitle h2 {
+  font-size: 25px;
+}
+.sectionTitle a {
+  margin-left: 30px;
+}
+.sectionTitle {
+  margin-top: 50px 0 20px 0;
+}
+.new4k ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+}
+.new4k ul li img {
+  width: 300px;
+  height: 500px;
+  margin: 10px 20px 20px -5px;
+}
+/*-----call to action-----*/
+.calltoaction {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto 200px auto ;
+}
+.calltoaction h1 {
+  margin-bottom: 40px;
+}
+/*-----footer----*/
+footer {
+  width: 90%;
+  padding: 0 5%;
+}
+footer a {
+  text-decoration: none;
+  color: var(--main-black);
+}
+footer ul {
+  list-style: none;
+  float: right;
+}
+footer ul li {
+  display: inline-block;
+  margin-left: 50px;
+}
+.copy a , .copy p {
+  display: inline-block;
+  vertical-align: middle;
+}
+.copy a {
+  margin-left: 20px;
+}
+footer ul , .copy {
+  line-height: 80px;
+  display: inline-block;
+}
+/*-----resposive----*/
+@media only screen and (max-width:1200px) {
+  header {
+    height: 100vh;
+    min-height: 1000px;
+  }
+  header h1 {
+    margin: 50px 0 40px 0 ;
+  }
+  .btnWhite {
+    margin-bottom:80px;
+  }
+  .calltoaction {
+    width: 90%;
+  }
+}
+@media only screen and (max-width:900px) {
+  header h1 {
+    width: 100%;
+  }
+  header {
+    background-position: left center ;
+  }
+  footer ul {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .copy {
+    text-align: center;
+    display: block;
+  }
+  footer ul li {
+    margin: 0 25px ;
+  }
+}
+@media only screen and (max-width:700px) {
+  .new4k ul {
+    flex-direction: column;
+  }
+  .new4k ul li img {
+    width: 550px;
+    height: 700px;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  nav ul li {
+    margin: 0px;
+  }
+  footer ul li {
+    display: none;
+  }
+  h1 {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width:500px) {
+  .new4k ul li img {
+    width: 450px;
+    height: 600px;
+  }
+}
